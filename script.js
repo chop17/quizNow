@@ -11,7 +11,7 @@ let correctAnswer = "", correctScore = askedCount = 0, totalQuestion = 10;
 
 // load question from API
 async function loadQuestion(){
-    const APIUrl = 'https://opentdb.com/api.php?amount=10&category=18&type=multiple';  //https://opentdb.com/api.php?amount=1
+    const APIUrl = 'https://opentdb.com/api.php?amount=1';  //
     const result = await fetch(`${APIUrl}`)
     const data = await result.json();
     _result.innerHTML = "";
